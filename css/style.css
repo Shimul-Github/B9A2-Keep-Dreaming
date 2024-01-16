@@ -42,6 +42,8 @@ header{
 
 .theme-color {
     color: #FF5400;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
 }
 
 
@@ -181,6 +183,7 @@ main{
 
 .destination-title {
     margin-bottom: 2rem;
+    margin-top: 1rem;
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
@@ -502,7 +505,9 @@ margin-left: 300px;
 .reasons-content p:hover {
     border: 1px solid blue;
 }
-
+.card1 .card-title, .card2 .card-title{
+    margin-bottom: 16px;
+} 
 /* Styles for deals & discounts */
 
 .deals-title {
@@ -617,15 +622,15 @@ margin-left: 300px;
 }
 
 .info-left-side .deals-rules {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     display: flex;
-    gap: 24px;
+    gap: 25px;
     padding-bottom: 26px;
 }
 
 .info-right .deals-rules {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     display: flex;
     gap: 24px;
@@ -802,15 +807,42 @@ margin-left: 300px;
 
 }
 
-.newsletter-pic img{
+/* .newsletter-pic img{
     height: 440px;
-}
+} */
 .newsletter-pic {
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    background-image: url('../Images/Rectangle\ 15.png');
+    border: 2px solid black;
+    height: 450px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.cupon{
+    background: tomato;
+    border: 2px solid #cb840a;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: whitesmoke;
+    transform: rotate(-55deg);
+    -webkit-transform: rotate(-55deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-55deg);
+    -o-transform: rotate(-55deg);
+    margin-top: 290px;
+    margin-left: 340px;
 }
       
 
@@ -879,3 +911,252 @@ hr {
 
 
 /* Style for MQ (small device) */
+@media screen and (max-width:576px) {
+    header{
+        margin: 20px;
+    }
+    .nav-bar{
+        flex-direction: column;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+    .nav-logo img {
+        width: 28px;
+        height: 33px;
+    }
+    .nav-logo{
+        font-size: 21px;
+    }
+    .nav-menus li a {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: #424247;
+    }
+
+    /* Banner */
+    .banner-title {
+        padding-top: 32px;
+        font-size: 22px;
+    }
+    .banner-title-description {
+        font-size: 14px;
+        line-height: 21px;
+        padding-top: 8px;
+        max-width: 300px;
+        margin-bottom: 32px;
+    }
+
+    .search-box{
+        flex-direction: column;
+        margin: 0px;
+        padding: 16px 44px;
+    }
+
+    .Choices{
+        gap: 80px;
+        display: flex;
+
+    }
+    .find{
+        padding-left: 60px;
+    }
+    
+    /* POPULAR DESTINATINS */
+    main{
+        margin: 20px;
+    }
+    .popular-destinations{
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .destinations-content{
+       margin-left: 0px;
+       max-width: 330px;
+    }
+
+    .btn-destination{
+        margin: 24px 0px;
+    }
+    .destinations-pic img{
+        width: 335px;
+        height: 342px;
+        padding-top: 150px;
+
+    }
+
+    /* Choice section */
+    .choice-title{
+        font-size: 20px;
+    }
+
+    .choice-title-description{
+        font-size: 14px;
+        max-width: 315px;
+    }
+    .choice-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    #choice-1 {
+        grid-column: 1/span 12;
+        grid-row: 1/span 1;
+    }
+    #choice-2 {
+        grid-column: 1/span 12;
+        grid-row: 2/span 2;
+    }
+
+    #choice-3 {
+        grid-column: 1/span 12;
+        grid-row: 3/span 3;
+    }
+
+    #choice-4 {
+        grid-column: 1/span 12;
+        grid-row: 4/span 4;
+    }
+
+    #choice-5 {
+        grid-column: 1/span 12;
+        grid-row: 5/span 5;
+    }
+
+    #choice-6 {
+        grid-column: 1/span 12;
+        grid-row: 6/span 6;
+    }
+
+    #choice-7 {
+        grid-column: 1/span 12;
+        grid-row: 7/span 7;
+    }
+
+    /* Reasons section */
+    .reasons-title{
+        font-size: 20px;
+    }
+
+    .reasons-title-description{
+        max-width: 309px;
+        margin: 0px;
+        margin-bottom: 16px;
+        margin-left: 25px;
+    }
+
+    .card2{
+        position:none;
+        left: 0px;
+    }
+    .card, .card1, .card2 img{
+        margin-bottom: 16px;
+    }
+    .card, .card1, .card2 .card-title{
+        margin-bottom: 16px;
+    }
+
+    /* Deals section */
+    .deals-title{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .deals-description{
+        font-size: 14px;
+        font-weight: 24px;
+        max-width: 309px;
+        margin-bottom: 15px;
+    }
+
+    #d-info,#d-info1{
+        max-width: 360px;
+        height: 500px;
+    } 
+    .info-right,.info-left-side{
+        position: none;
+        left: 25px;
+        top: 180px;
+        padding: 0px;
+        width: 303px;
+        height: 297px;
+        margin: 0px auto;
+    }
+    .info-right .deals-rules{
+        flex-wrap: wrap;
+        margin: 0p;
+        padding-left: 5px;
+    }
+    .info-title{
+        padding-left: 10px;
+        padding-top: 2px;
+    }
+    .info-description{
+        padding-left: 10px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+
+    }
+    .price-range{
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    .info button{
+        padding-left: 25px;
+    }
+
+    .btn-package{
+       display: none;
+    }
+
+    /* Perfect Destination */
+    .perfect-container{
+        flex-direction: column;
+    }
+
+    .perfect-content{
+        max-width: 335px;
+    }
+    .btn-package1{
+        margin-top: 180px;
+    } 
+
+    .perfect-view video{
+        width: 365px;
+        margin-top: 25px;
+        border-radius: 16px;
+}
+
+    /* newsletter section */
+    .newsletter-container {
+        flex-direction: column;
+    }
+    .subscribe hr {
+        
+        max-width: 288px;
+    }
+    .input input {
+        padding: 16px 106px 16px 20px;
+
+    }
+    .subscribe{
+        max-width: 375px;
+        padding: 24px;
+
+    }
+    .btn-subscribe{
+        padding: 14px 115px;
+    }
+    .newsletter-pic img{
+        max-width: 360px;
+        height: 300px;
+    }
+
+    /* footer part */
+    .web-info{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .footer-content{
+        padding: 32px 44px;
+    }
+}
