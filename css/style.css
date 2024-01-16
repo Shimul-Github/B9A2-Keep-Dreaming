@@ -82,7 +82,7 @@ body {
     font-weight: 800;
 }
 
-.banner-description {
+.title-description {
     color: #FFF;
     font-size: 1rem;
     font-weight: 400;
@@ -235,26 +235,26 @@ line-height: 1.625rem;
 
 /* Style for Choices Section */
 .choice-destination{
-    
     margin-top: 100px;
-
+}
+.choice-content{
+    text-align: center;
 }
 .choice-title{
 color: #131318;
 font-size: 40px;
 font-weight: 800;
 margin-bottom: 24px;
-text-align: center;
 }
-.choice-description{
+.title-description{
 color: rgba(19, 19, 24, 0.70);
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
-text-align: center;
 width: 643px;
 /* margin-left: 485px; */
 margin: 0px auto 48px;
+border: 0px;
 }
 
 /* .choice-container img{
@@ -367,6 +367,78 @@ margin: 0px auto 48px;
 }
 
 
+/* Style for reasons section */
+.reasons-title{
+    color: #131318;
+text-align: center;
+font-size: 40px;
+font-weight: 800;
+}
+#special{
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    
+}
+.card{
+    height: 284px;
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+width: 573px;
+flex-grow: 2;
+}
+.card img{
+    padding: 32px;
+}
+.card-title{
+    padding: 0px 32px 16px;
+}
+.card-title-description{
+    padding: 0px 55px 32px 32px;
+}
+.card1{
+    height: 284px;
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+width: 573px;
+flex-grow: 2;
+}
+.card1 img{
+    padding: 32px;
+}
+.card2{
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+width: 573px;
+position: relative;
+left: 531px;
+}
+.card2 img{
+    padding: 32px;
+}
+
+.card-container div:hover{
+    border: 1px solid blue;
+}
+.card-container div:hover{
+    border: 1px solid blue;
+}
+.reasons-content h1:hover{
+    border: 1px solid blue;
+}
+.reasons-content p:hover{
+    border: 1px solid blue;
+}
+
+
+
 /* Style for MQ (small device) */
 @media screen and (max-width:576px) {
     body {
@@ -396,7 +468,7 @@ margin: 0px auto 48px;
         font-size: 1.38rem;
     }
 
-    .banner-description {
+    .title-description {
         font-size: .88rem;
         line-height: 1.31rem;
         margin: 0px auto;
@@ -446,7 +518,7 @@ margin: 0px auto 48px;
         font-weight: 800;
         margin-top: 24px;
     }
-    .choice-description{
+    .title-description{
         margin: 16px auto;
         text-align: center;
         width: 100%;
@@ -485,4 +557,27 @@ margin: 0px auto 48px;
         grid-column: 1/span 12;
         grid-row: 7/span 7; 
     }
+
+    .card, .card1,.card2{
+        width: 335px;
+        height: 300px;
+        position: none;
+        left: 0px;
+        /* padding: 32px; */
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .card img, .card1 img,.card2 img{
+        padding: 32px 0px 16px 32px;
+    }
+    .card-title{
+        padding: 0px 0px 16px 32px;
+    }
+    .card .card-title-description, .card1 .card-title-description,.card2 .card-title-description {
+        padding: 0px 0px 16px 32px;
+        max-width: 271px;
+    }
+   
+    
+
 }
