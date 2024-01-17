@@ -10,38 +10,94 @@
             margin: 0px;
             padding: 0px;
         }
-        main{
+        header{
             margin: 63px 135px;
+           }
+        
+        .nav-bar{
+            position: relative;
         }
-
-        .popular-destinations{
-            background-color: red;
+        .nav-bar .menu-bar{
             display: flex;
-            gap: 53px;
-            justify-content: space-between;
+            align-items: center;
+            gap: 300px;
         }
-        .destinations-content{
-            max-width: 577px;
-        }
-        .pic{
-            background-image: url('images/Rectangle\ 15.png');
-            border: 2px solid black;
-            height: 500px;
-            width: 500px;
 
+        .nav-bar ul{
+            list-style: none;
         }
-       
+        .nav-bar li a{
+            text-decoration: none;
+            color: rgb(10, 1, 1);
+            
+        }
+        .nav-bar ul li{
+            margin-right: 5px;
+        }
+
+        .nav-logo{
+            display: flex;
+        }
+
+        .icon{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        @media screen and (max-width:576px) {
+            .nav-bar .menu-toggle{
+                display: none;
+            }
+            .icon{
+                cursor: pointer;
+            }
+            
+        }
+        
     </style>
 </head>
 <body>
-    <main>
+    <header>
+        <div class="nav-bar">
+
+            <div class="menu-bar">
+
+            <div class="nav-logo">
+
+                <div><img src="Images/Group 40071 (2).png" alt="Logo"></div>
+
+                <div>
+                    <h1 class="logo-title">
+                        Dream <span class="theme-color">Travel</span>
+                    </h1>
+                    <caption><span class="theme-color">Travel like Dream</span></caption>
+                </div>
 
 
-        <div class="pic">
+            </div>
+
+            <div class="menu-toggle">
+                <div class="nav-menus">
+                    <ul>
+                        <li>
+                            <a href="#"><span class="theme-color">Home</span></a>
+                            <a href="">Packages</a>
+                            <a href="#">Testimonial</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
-        
-    </main>
+        <button class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg></button>
+    
+            
+        </div>
+
+    </header>
    
     
 </body>
