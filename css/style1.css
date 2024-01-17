@@ -24,6 +24,9 @@
     }
 
     /* Banner */
+    .banner{
+        height: 34rem;
+    }
     .banner-title {
         padding-top: 32px;
         font-size: 22px;
@@ -43,7 +46,7 @@
     }
 
     .Choices{
-        gap: 80px;
+        gap: 75px;
         display: flex;
 
     }
@@ -66,27 +69,42 @@
     }
 
     .btn-destination{
-        margin: 24px 0px;
+        margin: 24px 0px 0px 0px;
     }
     .destinations-pic img{
-        width: 335px;
+        width: 370px;
         height: 342px;
         padding-top: 150px;
-
+        border: 0px;
+    }
+    .destination-title{
+        font-size: 20px;
+    }
+    .destinations-title-description{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .color{
+        text-align: justify;
+    }
+    .destinations-pic{
+        margin-top: 24px;
     }
 
     /* Choice section */
     .choice-title{
         font-size: 20px;
+        margin-top: 0px;
     }
 
     .choice-title-description{
-        font-size: 14px;
+        font-size: 20px;
         max-width: 315px;
     }
     .choice-container{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(7, 1fr);
+        row-gap: 15px;
     }
 
     #choice-1 {
@@ -125,7 +143,7 @@
 
     /* Reasons section */
     .reasons-title{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .reasons-title-description{
@@ -133,26 +151,26 @@
         margin: 0px;
         margin-bottom: 16px;
         margin-left: 25px;
+        font-size: 18px;
     }
 
     .card2{
         position:none;
         left: 0px;
     }
-    .card, .card1, .card2 img{
-        margin-bottom: 16px;
+    .card img, .card1 img, .card2 img{
+        padding-bottom: 10px;
+        padding-top: 5px;
     }
-    .card, .card1, .card2 .card-title{
-        margin-bottom: 16px;
-    }
+    
 
     /* Deals section */
     .deals-title{
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 15px;
     }
     .deals-description{
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 24px;
         max-width: 309px;
         margin-bottom: 15px;
@@ -166,15 +184,25 @@
         position: none;
         left: 25px;
         top: 180px;
-        padding: 0px;
-        width: 303px;
-        height: 297px;
+        padding: 26px 24px;
+        width: 250px;
+        height: 240px;
         margin: 0px auto;
+
     }
     .info-right .deals-rules{
         flex-wrap: wrap;
         margin: 0p;
         padding-left: 5px;
+        padding-bottom: 0px;
+    }
+    .info-left-side .deals-rules{
+        padding-bottom: 0px;
+        flex-wrap: wrap;
+    }
+    
+    .info-left-side .info-title{
+        font-size: 18px;
     }
     .info-title{
         padding-left: 10px;
@@ -206,12 +234,22 @@
     .perfect-content{
         max-width: 335px;
     }
+    .perfect-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .perfect-description{
+        font-size: 16px;
+    }
+    .perfect-content ul li{
+        padding-bottom: 20px;
+    }
     .btn-package1{
-        margin-top: 180px;
+        margin-top: 10px;
     } 
 
     .perfect-view video{
-        width: 365px;
+        width: 340px;
         margin-top: 25px;
         border-radius: 16px;
 }
@@ -236,17 +274,62 @@
     .btn-subscribe{
         padding: 14px 115px;
     }
-    .newsletter-pic img{
-        max-width: 360px;
-        height: 300px;
+    .newsletter-pic{
+        max-width: 100%;
     }
 
+    .cupon{
+        background: tomato;
+        border: 2px solid #cb840a;
+        height: 100px;
+        width: 230px;
+        text-align: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        color: whitesmoke;
+        transform: rotate(-48deg);
+        -webkit-transform: rotate(-48deg);
+        -moz-transform: rotate(-48deg);
+        -ms-transform: rotate(-48deg);
+        -o-transform: rotate(-48deg);
+        margin-top: 250px;
+        margin-left: 120px;
+        padding-top: 40px;
+        font-size: 16px;
+}
+
     /* footer part */
+    footer{
+        width: 100%
+    }
+    footer hr{
+        width: 340px;
+        margin-top: 20px;
+    }
     .web-info{
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 35px;
     }
     .footer-content{
         padding: 32px 44px;
+    }
+    .footer-logo{
+        padding-top: 0px;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-left: 45px;
+    }
+    .links img{
+        width: 40px;
+        height: 40px;
+    }
+    .copyright{
+        margin-bottom: 20px;
     }
 }
